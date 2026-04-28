@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DC Lookup Simulator</title>
+  <title>DC Lookup </title>
 
   <style>
     * {
@@ -273,17 +273,17 @@
         <div class="dot red"></div>
         <div class="dot yellow"></div>
         <div class="dot green"></div>
-        <div class="top-title">secure-terminal / dc-lookup-simulator</div>
+        <div class="top-title">secure-terminal / dc-lookup-</div>
       </div>
 
       <div class="content">
         <h1>DC LOOKUP</h1>
         <p class="subtitle">
-          Írj be egy Discord nevet, és a rendszer elindít egy látványos, kamu adatkereső szimulációt.
+       Write egy Discord usher, and acrte.
         </p>
 
         <p class="warning">
-          FIGYELEM: Ez csak design / poén szimuláció. Nem kér le valódi IP-t vagy szolgáltatót.
+        Warning its local
         </p>
 
         <div class="input-box">
@@ -311,18 +311,18 @@
             </div>
 
             <div class="result-item">
-              <small>Kamu IP cím</small>
+              <small> IP cím</small>
               <strong id="resIp">-</strong>
             </div>
 
             <div class="result-item">
               <small>Státusz</small>
-              <strong>SIMULATED</strong>
+              <strong>Active</strong>
             </div>
           </div>
 
           <div class="fake-label">
-            Ez a találat teljesen véletlenszerűen generált, nem valódi adat.
+            Adat feldolgozva
           </div>
         </div>
       </div>
@@ -408,15 +408,15 @@
           }
 
           if (index === 5) {
-            addLine(`[PACKET] ${rand(1200, 9800)} db kamu csomag feldolgozva`, "info");
+            addLine(`[PACKET] ${rand(1200, 9800)} feldolgozva`, "info");
           }
 
           if (index === 7) {
-            addLine(`[ISP] Lehetséges szolgáltató: ${provider}`, "success");
+            addLine(`[ISP]  szolgáltató: ${provider}`, "success");
           }
 
           if (index === 8) {
-            addLine(`[IP] Generált cím: ${ip}`, "success");
+            addLine(`[IP]  cím: ${ip}`, "success");
           }
 
           index++;
